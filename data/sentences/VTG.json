@@ -1,0 +1,46 @@
+{
+  "type": "VTG",
+  "title": "Course & ground speed",
+  "description": "Reports travel direction and speed over ground in knots and kilometers per hour.",
+  "example": "$GPVTG,140.88,T,,M,8.04,N,14.89,K,D*05",
+  "fields": [
+    {
+      "name": "True course",
+      "description": "Course over ground in degrees."
+    },
+    {
+      "name": "True reference",
+      "description": "T indicates true north."
+    },
+    {
+      "name": "Magnetic course",
+      "description": "Course relative to magnetic north; may be empty."
+    },
+    {
+      "name": "Magnetic reference",
+      "description": "M indicates magnetic north."
+    },
+    {
+      "name": "Speed in knots",
+      "description": "Speed over ground."
+    },
+    {
+      "name": "Knots marker",
+      "description": "N identifies knots."
+    },
+    {
+      "name": "Speed in km/h",
+      "description": "Speed over ground."
+    },
+    {
+      "name": "km/h marker",
+      "description": "K identifies kilometers per hour."
+    },
+    {
+      "name": "Mode (optional)",
+      "description": "Receiver mode, such as autonomous or differential."
+    }
+  ],
+  "notes": "Ground speed differs from speed through water when currents are present. Course over ground is not vessel heading.",
+  "source": "https://receiverhelp.trimble.com/oem-gnss/nmea0183-messages-vtg.html"
+}

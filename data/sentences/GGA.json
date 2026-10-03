@@ -1,0 +1,66 @@
+{
+  "type": "GGA",
+  "title": "Position & fix quality",
+  "description": "Position and receiver-fix information, including satellite count, dilution of precision and height.",
+  "example": "$GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47",
+  "fields": [
+    {
+      "name": "UTC time",
+      "description": "Time of the position fix."
+    },
+    {
+      "name": "Latitude",
+      "description": "Degrees and minutes: ddmm.mmmm."
+    },
+    {
+      "name": "Latitude hemisphere",
+      "description": "N or S."
+    },
+    {
+      "name": "Longitude",
+      "description": "Degrees and minutes: dddmm.mmmm."
+    },
+    {
+      "name": "Longitude hemisphere",
+      "description": "E or W."
+    },
+    {
+      "name": "Fix quality",
+      "description": "0 means invalid; other codes identify positioning methods."
+    },
+    {
+      "name": "Satellites used",
+      "description": "Count used in the solution, not all visible satellites."
+    },
+    {
+      "name": "HDOP",
+      "description": "Horizontal dilution of precision; a geometry indicator, not an error in meters."
+    },
+    {
+      "name": "Height above MSL",
+      "description": "Orthometric height referenced to mean sea level."
+    },
+    {
+      "name": "Height unit",
+      "description": "M indicates meters."
+    },
+    {
+      "name": "Geoid separation",
+      "description": "Separation between the geoid and reference ellipsoid."
+    },
+    {
+      "name": "Separation unit",
+      "description": "M indicates meters."
+    },
+    {
+      "name": "Correction age",
+      "description": "Age of differential corrections, seconds; may be empty."
+    },
+    {
+      "name": "Reference station",
+      "description": "Correction-source identifier; may be empty."
+    }
+  ],
+  "notes": "GGA does not include a date. Quality codes and extended precision can vary with receiver and version. Height above mean sea level differs from ellipsoidal height.",
+  "source": "https://receiverhelp.trimble.com/oem-gnss/nmea0183-messages-gga.html"
+}

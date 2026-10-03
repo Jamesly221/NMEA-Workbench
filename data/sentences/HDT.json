@@ -1,0 +1,18 @@
+{
+  "type": "HDT",
+  "title": "True heading",
+  "description": "Reports heading relative to true north.",
+  "example": "$HEHDT,123.456,T*28",
+  "fields": [
+    {
+      "name": "Heading",
+      "description": "Degrees clockwise from true north."
+    },
+    {
+      "name": "True reference",
+      "description": "T indicates true north."
+    }
+  ],
+  "notes": "Heading is the direction the vessel points. It can differ from course over ground. The talker identifier depends on the producing instrument; this example uses HE.",
+  "source": "https://receiverhelp.trimble.com/oem-gnss/nmea0183-messages-hdt.html"
+}

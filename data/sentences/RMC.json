@@ -1,0 +1,62 @@
+{
+  "type": "RMC",
+  "title": "Position, speed & time",
+  "description": "A compact position report with time, receiver status, speed over ground and course over ground.",
+  "example": "$GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,003.1,W*6A",
+  "fields": [
+    {
+      "name": "UTC time",
+      "description": "Time of the position fix, hhmmss with optional fractional seconds."
+    },
+    {
+      "name": "Status",
+      "description": "A indicates active data; V indicates void data."
+    },
+    {
+      "name": "Latitude",
+      "description": "ddmm.mmmm: degrees followed by minutes."
+    },
+    {
+      "name": "Latitude hemisphere",
+      "description": "N or S."
+    },
+    {
+      "name": "Longitude",
+      "description": "dddmm.mmmm: degrees followed by minutes."
+    },
+    {
+      "name": "Longitude hemisphere",
+      "description": "E or W."
+    },
+    {
+      "name": "Speed over ground",
+      "description": "Knots; movement relative to the ground."
+    },
+    {
+      "name": "Course over ground",
+      "description": "Direction of travel, measured clockwise from true north."
+    },
+    {
+      "name": "Date",
+      "description": "ddmmyy; the century is not encoded."
+    },
+    {
+      "name": "Magnetic variation",
+      "description": "Magnitude in degrees; may be empty."
+    },
+    {
+      "name": "Variation direction",
+      "description": "E or W; may be empty."
+    },
+    {
+      "name": "Mode (optional)",
+      "description": "Receiver mode; availability depends on version."
+    },
+    {
+      "name": "Navigation status (optional)",
+      "description": "Version-specific navigation status."
+    }
+  ],
+  "notes": "Course over ground describes travel direction, not the direction the bow points. An active status does not establish positioning accuracy.",
+  "source": "https://receiverhelp.trimble.com/oem-gnss/nmea0183-messages-rmc.html"
+}
